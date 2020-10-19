@@ -15,7 +15,9 @@ const todoListSchema = new mongoose.Schema({item:String});
 const todoModel = mongoose.model("todolist",todoListSchema)
 
 
-
+app.get("/",(req,res)=>{
+  res.render("home")
+})
 
 
 app.get("/todo",(req,res)=>{
