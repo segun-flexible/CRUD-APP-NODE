@@ -9,4 +9,6 @@ app.use(express.static("public"))
 todoController(app)
 
 
-app.listen(process.env.PORT || 8080)
+app.listen(process.env.PORT || 8080,()=>{
+    console.log("App Started")
+})
